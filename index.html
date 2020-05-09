@@ -19,7 +19,7 @@
                 <label for="pagetitle">Page title:</label>
                 <input type="text" name="pagetitle" id="pagetitle" value="" placeholder="Type a page title then hit enter."/>
             </form>
-            <a href="about:blank" target="_blank">New Tab</a>
+            <a href="/nameATab/?pagetitle=New Tab" target="_blank">New Tab</a>
         </div>
         <script type="text/javascript">
             var pagetitle = document.getElementById('pagetitle');
@@ -33,7 +33,7 @@
             }
             function changeTitle(title){
                document.title = title;
-               window.location.href('/nameatab/?title=' + encodeURIComponent(title));
+               window.location.href('/nameATab/?title=' + encodeURIComponent(title));
             }
             function getParameterByName(name) {
                 name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
